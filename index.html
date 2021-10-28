@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#B85C38" />
+    <meta name="msapplication-navbutton-color" content="#B85C38" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#B85C38" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <title>Wedding-invitation : Name & Name</title>
+  </head>
+  <body onload="hide_loading();">
+        <!-- Loader -->
+        <div class="overlay loading">
+            <div class="lds-ellipsis">
+                <div></div><div></div><div></div>
+            </div>
+        </div>
+
+
+    <header class="header">
+        <div class="bg-cover position-absolute">
+            <img src="img/bg-cover.svg" alt="bg_cover01">
+        </div>
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100">
+                <div class="col-md-12 col-xl-6 col-12 img-cover d-flex justify-content-center align-items-center">
+                    <img src="img/img_cover.svg" alt="img_cover" class="img-fluid">
+                </div>
+                <div class="col-md-12 col-xl-6 d-flex align-items-center justify-content-center">
+                    <div class="row">
+                        <div class="text-center col-12 g-4">
+                            <div class="heading">
+                            <h1 class="text-primary fs-1">Jonathan </h1>
+                            <h2 class="text-secondary fs-1">&</h2>
+                            <h1 class="text-primary fs-1">Kenny</h1>
+                            </div>
+                            <div class="title col-12 my-4 py-2">
+                                <h4 class="text-primary fs-4">WEDDING INVITATION</h4>
+                                <h6 class="text-accent fs-6">Jl.Kenganga III No.23 Jakarta Timur,Jakarta</h6>
+                                <h5 class="text-primary fs-6">Minggu</h5>
+                                <h6 class="text-accent fs-6">27 November 2021</h6>
+                            </div>
+                            <div class="btn-open col-12">
+                                <button class="btn btn-dark text-light open-invitation" data-bs-toggle="modal" data-bs-target="#popup-konten"><i class="far fa-envelope-open"></i> Buka Undangan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+            <!-- nav bar -->
+        <nav class="navbar navbar-light bg-transparent fixed-top">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header d-flex justify-content-end">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#acara"> <i class="far fa-calendar-alt fs-4"></i> Acara</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#lokasi"> <i class="fas fa-map-marker-alt fs-4"></i> Lokasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galleri"> <i class="far fa-image fs-4"></i> Galleri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pesan"> <i class="far fa-comments fs-4"></i> Ucapan</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!-- end nav -->
+        <section class="opening">
+            <div class="img-hero mb-2">
+                <div class="heading position-absolute w-100 h-100 d-flex justify-content-evenly align-items-center flex-column">
+                    <svg><text x="50%" y="50%" text-anchor="middle">J & K</text>
+                    </svg>
+                    <br>
+                    <div class="text-center arrow">
+                        <i class="fas fa-angle-double-down"></i>
+                    </div>
+                </div>
+                <img src="img/Group 161.png" alt="img_hero" class="img-fluid">
+            </div>
+            <div class="opening-content" id="acara">
+                <div class="container">
+                    <div class="heading text-center mb-3">
+                        <h4 class="text-primary fs-4">Wedding Invitation</h4>
+                        <p class="text-accent fs-6">Dengan memohon rahmat dan ridho Allah SWT, Mohon do’a restu Bapak/Ibu/Saudara dalam rangka melangsungkan pernikahan putra putri kami :</p>
+                    </div>
+                    <div class="name-heading">
+                        <div class="row">
+                            <div class="col left">
+                                <h2 class="text-primary fs-2 mb-2">Jonathan Jono</h2>
+                                <p class="text-accent fs-6">Putra kedua dari Bpk. Jono & Ibu Joni
+                                    Jl.Jalan2, Jakarta Timur</p>
+                            </div>
+                            <div class="col-1 text-center">
+                                <h2 class="text-secondary fs-2">&</h2>
+                            </div>
+                            <div class="col right">
+                                <h2 class="text-primary fs-2 mb-2">Kenny Komo</h2>
+                                <p class="text-accent fs-6">Putra kedua dari Bpk. Jono & Ibu Joni
+                                    Jl.Jalan2, Jakarta Timur</p>
+                            </div>
+                        </div>
+                </div>
+                <h6 class="text-primary text-center my-4">21 September 2021</h6>
+                <div class="timer mt-4 py-3" data-aos="fade-down" data-aos-duration="1200">
+                        <div class="d-flex justify-content-center">
+                            <div class="card-timer mx-2">
+                                <div class="text-primary text-center">
+                                    <div class="list-timer"></div>
+                                    <h4 class="fs-2 fw-bold" id="days">01</h4>
+                                    <span>days</span>
+                                    <div class="list-timer"></div>
+                                </div>
+                            </div>
+                            <div class="card-timer mx-3">
+                                <div class="text-primary text-center">
+                                    <div class="list-timer"></div>
+                                    <h4 class="fs-2 fw-bold " id="hours">01</h4>
+                                    <span>hours</span>
+                                    <div class="list-timer"></div>
+                                </div>
+                            </div>
+                            <div class="card-timer mx-3">
+                                <div class="text-primary text-center">
+                                    <div class="list-timer"></div>
+                                    <h4 class="fs-2 fw-bold" id="minutes">01</h4>
+                                    <span>minutes</span>
+                                    <div class="list-timer"></div>
+                                </div>
+                            </div>
+                            <div class="card-timer mx-3">
+                                <div class="text-primary text-center">
+                                    <div class="list-timer"></div>
+                                    <h4 class="fs-2 fw-bold" id="seconds">01</h4>
+                                    <span>seconds</span>
+                                    <div class="list-timer"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="btn-savedate text-center my-4">
+                    <button class="btn btn-dark text-light"><i class="far fa-calendar-check"></i> Save The Date</button>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="ceremonial" id="lokasi">
+            <div class="container">
+                <div class="row ceremonial-content">
+                    <div class="col-xl-6 col-12 mb-4" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="card card-event mx-auto rounded shadow">
+                            <div class="card-body text-primary">
+                                <div class="px-4 py-2">
+                                <h4 class="fs-4">Akad Nikah</h4>
+                                <p class="fs-6">Minggu,27 november 2021
+                                    09.00 wib
+                                    Masjid At-ta’un</p>
+                                </div>
+                                <div class="px-4 py-2">
+                                <h4 class="fs-4">Resepsi</h4>
+                                <p class="fs-6">Minggu,27 november 2021
+                                    09.00 wib
+                                    Masjid At-ta’un</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- maps -->
+                    <div class="col-xl-6 col-12 card-maps" data-aos="fade-left" data-aos-duration="1100">
+                        <div class="btn-maps text-center py-4">
+                            <a href="#" target="_blank" class="btn btn-dark text-light"><i class="fas fa-location-arrow"></i> View Maps</a>
+                        </div>
+                        <div class="maps w-100">
+                            <iframe class="w-100 h-100 rounded" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3383.4336078451233!2d119.5014263!3d-5.230236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e1!3m2!1sid!2sid!4v1635097382558!5m2!1sid!2sid" 
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <!-- end maps -->
+                </div>
+            </div>
+        </section>
+        <section class="wedding-galleri" id="galleri">
+            <div class="container">
+                <h4 class="text-primary text-center fs-4" data-aos="fade-down" data-aos-duration="1000">Wedding Galleri</h4>
+                <!-- galleri -->
+                <div class="content-galleri">
+                    <!-- Load Galleri Jquery -->
+                </div>
+                <!-- button view more -->
+                <div class="btn-galleri py-4 mt-4">
+                    <button class="btn btn-dark text-light btn-viewgalleri">View more <i class="fas fa-chevron-right"></i></button>
+                    <button class="btn btn-dark text-light btn-hidegalleri d-none">hide <i class="fas fa-chevron-left"></i></button>
+                </div>
+                <!-- end galleri -->
+                <div class="youtube py-4" data-aos="fade-down" data-aos-duration="1100">
+                    <iframe class="w-100 h-100" src="https://www.youtube.com/embed/ACo60qnd_Lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="section-comments">
+            <div class="container">
+                <div class="heading py-4">
+                    <h4 class="text-center text-primary fs-4" data-aos="fade-down" data-aos-duration="1000">Kirim Ucapan</h4>
+                    <p class="text-accent text-center fs-6" data-aos="fade-up" data-aos-duration="1100">Ucapan selamat dan kebahagiaan bisa darimana saja. Tanpa jabatan-jabatan tangan 
+                        atau pelukan-pelukan hangat, masih ada simpul-simpul senyum dan doa-doa baik yang kami harapkan.</p>
+                </div>
+                <div class="form-comments py-4" id="pesan" data-aos="fade-right" data-aos-duration="1000">
+                    <form id="form1">
+                        <div class="mb-3">
+                        <label for="name" class="form-label fs-6 text-primary">name : </label>
+                        <input type="text" class="form-control fs-6" id="name" maxlength="35" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="comments" class="form-label fs-6 text-primary">Comment :</label>
+                            <textarea class="form-control fs-6" id="comments" rows="3" maxlength="150" ></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary mt-2" id="btn-send">Send <i class="far fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="container" data-aos="fade-left" data-aos-duration="1200">
+                <div class="recent-comments">
+                    <div class="title-comments mb-3">
+                        <h6 class="text-primary fs-5"><u>Recent Comments :</u></h6>
+                    </div>
+                    <div class="collumn-comments">
+                       
+                    </div>
+                </div>
+                <div class="list my-4"></div>
+            </div>
+        </section>
+        <section class="closing text-center" >
+            <div class="container">
+                <h6 class="text-primary fs-4">Terimakasih</h6>
+                <p class="text-accent fs-6">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak/ Ibu/ Saudara/ i. 
+                    berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.</p>
+            </div>
+            <div class="heading d-flex justify-content-center py-4">
+                <h1 class="text-primary fs-2">Jonathan </h1>
+                <h2 class="text-secondary px-4 fs-1">&</h2>
+                <h1 class="text-primary fs-2">Kenny</h1>
+                </div>
+        </section>
+    </main>
+    <footer class="d-flex d-none">
+        <div class="container my-auto">
+            <p class="text-light fs-6">Powered By : <a href="" class="text-light">4project</a> </p>
+            <div class="list-footer">
+                <span class="m-2"><i class="fas fa-globe text-light"></i></span>
+                <span class="m-2"><i class="fas fa-at text-light"></i></span>
+                <span class="m-2"><i class="fab fa-instagram text-light"></i></span>
+            </div>
+        </div>
+    </footer>
+    <!-- popup -->
+    <div class="modal fade" id="popup-konten" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header clear-fix">
+                <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores veritatis enim sunt.</h6>
+            <div class="pt-4">
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <div class="icon-popup mx-auto">
+                            <img src="icon/1258-medical-mask-outline.gif" alt="icon-1">
+                        </div>
+                        <div class="title-popup">
+                            wajib menggunakan masker
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="icon-popup mx-auto">
+                            <img src="icon/534-hand-washing-5-step-outline.gif" alt="icon-2">
+                        </div>
+                        <div class="title-popup">
+                            Mencuci tangan
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <div class="icon-popup mx-auto">
+                            <img src="icon/1277-antibacterial-spray-disinfection-outline.gif" alt="icon-3">
+                        </div>
+                        <div class="title-popup">
+                            menggunakan hand sanitizer
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="icon-popup mx-auto">
+                            <img src="icon/1275-fever-outline.gif" alt="icon-4">
+                        </div>
+                        <div class="title-popup mx-auto">
+                            Suhu tubuh normal
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        delay: 20,
+        easing: 'ease-in-out',
+        once: false
+      });
+    </script>
+    <script src="js/js.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/countdown.js"></script>
+
+</body>
+</html>
