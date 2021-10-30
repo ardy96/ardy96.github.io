@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans:wght@400;700&family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap');
+
+:root{
+    --dark: #05101b;
+    --darkLight: #222529;
+    --primary: #00f8d7;
+    --light: rgb(194, 197, 197);
+    --secondary: rgb(99, 98, 98);
+}
+.bg-dark{
+    background-color: var(--dark) !important;
+}
+.bg-darkLight{
+    background-color: var(--darkLight);
+}
+.text-light{
+    color: var(--light) !important;
+}
+.text-secondary{
+    color: var(--secondary) !important;
+}
+.text-primary{
+    color: var(--primary) !important;
+}
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+.btn-primary{
+    background-color: var(--primary) !important;
+}
+.btn{
+    background-color: var(--dark) !important;
+    border: var(--primary) solid 2px !important;
+}
+li{
+    list-style: none;
+}
+button,li,a,h4{
+    font-family: 'Zen+Kaku Gothic Antique';
+}
+h1,h2,h3,h5,h6,p{
+    font-family: 'Roboto';
+}
+.fs-1{
+    font-size: 48px !important;
+}
+.fs-2{
+    font-size: 36px !important;
+}
+.fs-3{
+    font-size: 24px !important;
+}
+.fs-4{
+    font-size: 19px !important;
+}
+.fs-5{
+    font-size: 14px !important;
+}
+.fs-6{
+    font-size: 14px !important;
+}
+.accordion,.accordion-item,.accordion-button{
+background-color: var(--darkLight) !important;
+}

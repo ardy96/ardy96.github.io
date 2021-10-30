@@ -1,364 +1,85 @@
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600&display=swap");
-html{
-  scroll-behavior: smooth;
-}
-/* style */
-:root {
-  --primary: #893100;
-  --accent: #b8511a;
+body{
+    width: 100%;
+    overflow-x: hidden;
 }
 
-.text-primary {
-  color: var(--primary) !important;
+header{
+    height: 100vh;
 }
-.text-accent {
-  color: var(--accent);
+.about, .about .konten-about{
+    height: 100vh;
 }
-.fs-1 {
-  font-size: 72px !important;
+.img-about{
+    width: 410px;
+    height: 500px;
+    border: 4px solid rgb(32, 160, 96);
+    transform: translateX(86px);
 }
-.fs-2 {
-  font-size: 48px !important;
-}
-.fs-3 {
-  font-size: 32px !important;
-}
-.fs-4 {
-  font-size: 24px !important;
-}
-.fs-5 {
-  font-size: 18px !important;
-}
-.fs-6 {
-  font-size: 14px !important;
-}
-.btn {
-  background-color: var(--primary);
-  border: none;
-}
-.btn:focus {
-  background-color: var(--primary);
-  opacity: 0.6;
-}
-.btn:hover {
-  background-color: var(--primary);
-  opacity: 0.8;
-}
-.list {
-  width: 100%;
-  height: 3px;
-  background-color: var(--accent);
-}
-h1,
-h2 {
-  font-family: "Great Vibes";
-}
-h4,
-h5,
-h6,
-p,
-span,
-li,
-a {
-  font-family: "Roboto";
-}
-a {
-  text-decoration: none;
-}
-li {
-  list-style: none;
-}
-/* ==== */
-/* nav bar */
-.navbar-toggler {
-  border: var(--accent) 3px solid !important;
-}
-.navbar-toggler i {
-  color: var(--accent);
-}
-.nav-link i {
-  width: 32px;
-}
-/* cover */
-header {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  overflow: hidden;
-}
-.bg-cover {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  overflow: hidden;
-}
-.bg-cover img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.img-cover img {
-  object-fit: cover;
-  width: 75%;
-}
-/* end cover */
-/* opening */
-.opening {
-  background-image: url(../img/bg2.svg);
-  background-size: cover;
-  background-repeat: repeat-y;
-  min-height: 100vh;
-  padding-bottom: 160px !important;
-}
-.name-heading .left {
-  text-align: right;
-}
-
-/* timer */
-.list-timer {
-  height: 6px;
-  width: 100%;
-  background-color: var(--primary);
-}
-.card-timer {
-  width: 20%;
-}
-/* section ceremonial */
-.ceremonial {
-  min-height: 100vh;
-  background-image: url(../img/bg2.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.ceremonial-content {
-  height: 65vh;
-}
-.card-event {
-  height: 100%;
-  width: 65%;
-  border: var(--primary) 4px solid;
-}
-/* maps */
-/* .card-maps {
-  height: 100%;
-} */
-.maps {
-  height: 300px;
-}
-/* galleri */
-.wedding-galleri {
-  min-height: 100vh;
-  background-image: url(../img/bg2.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.img-galleri {
-  overflow: hidden;
-  height: 420px;
-  cursor: pointer;
-}
-.img-galleri img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.img-galleri :hover {
-  opacity: 0.8;
-}
-.modal {
-  background-color: #c0c0c081;
-}
-.modal-dialog {
-  background-color: #e7e7e700;
-}
-.modal-content {
-  border: none !important;
-}
-/* youtube */
-.youtube {
-  height: 660px;
-  margin-top: 80px !important;
-  padding-bottom: 160px !important;
-}
-/* section comments */
-.section-comments {
-  background-image: url(../img/bg2.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.collumn-comments {
-  max-height: 600px;
-  overflow-y: auto;
-}
-.form-comments {
-  margin-bottom: 75px;
-}
-.icon-comments .icon1{
-  width: 55px;
-  height: 55px;
-}
-/* end section comment */
-.closing {
-  background-image: url(../img/bg2.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 160px;
-  padding-bottom: 75px;
-}
-/* footer */
-
-footer {
-  height: 130px;
-  background-color: var(--primary);
-}
-.list-footer span i {
-  font-size: 32px;
-}
-/* animate  */
-/* popup */
-.icon-popup{
-  width: 125px;
-  height: 125px;
-}
-.icon-popup img{
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-@keyframes textAnimate {
-  0% {
-    stroke-dasharray: 0 50%;
-    stroke-dashoffset: 20%;
-    fill: var(--primary);
-  }
-  100% {
-    stroke-dasharray: 50% 0;
-    stroke-dashoffstet: -20%;
-    fill: rgba(7, 7, 6, 0);
-  }
-}
-svg text {
-  font-family: "Great Vibes", sans-serif;
-  stroke: white;
-  text-decoration: underline;
-  font-size: 72px;
-  font-weight: bold;
-  animation: textAnimate 5s infinite alternate;
-}
-@keyframes txt-arrow {
-  0% {
-    color: var(--primary);
-    opacity: 0.6;
-    transform: translateY(-35px);
-  }
-  100% {
-    color: white;
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.arrow i {
-  font-size: 62px;
-  animation: txt-arrow 1.2s infinite alternate;
-}
-
-/* responsive point */
-/* ipad */
-@media screen and (max-width: 810px) {
-  .img-cover img {
-    width: 50%;
-  }
-  svg {
-    transform: translateY(-75%);
-  }
-  svg text {
-    font-size: 48px;
-  }
-  .arrow {
-    display: none;
-  }
-  .timer .fs-2 {
-    font-size: 28px;
-  }
-  .card-timer {
-    width: 25%;
-  }
-  /* .card-maps {
-  height: 80%;
-} */
-  .youtube {
-    height: 540px;
-  }
-}
-/* mobile */
-@media screen and (max-width: 520px) {
-  .fs-1 {
-    font-size: 42px !important;
-  }
-  .fs-2 {
-    font-size: 36px !important;
-  }
-  .fs-3 {
-    font-size: 28px !important;
-  }
-  .fs-4 {
-    font-size: 21px !important;
-  }
-  .fs-5 {
-    font-size: 16px !important;
-  }
-  .fs-6 {
-    font-size: 12px !important;
-  }
-  .opening {
-    padding-bottom: 100px !important;
-  }
-  svg {
-    transform: translateY(-150%);
-  }
-  svg text {
-    font-size: 38px;
-  }
-  .card-maps {
-    height: 320px;
-  }
-  .youtube {
-    height: 380px;
-  }
-  .img-galleri {
-    overflow: hidden;
-    height: 240px;
-  }
-  .img-galleri img {
+.img-about img{
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  }
-  /* .card-maps {
-    height: 75%;
-  } */
-  .ceremonial-content {
+}
+.decore-line{
+    width:100%;
+    height: 3px;
+}
+.list-about ul li div:first-child{
+    display: inline-block;
+    width: 86px;
+}
+.what{
     height: 100vh;
-  }
-  .maps {
-    height: 240px;
-  }
-  .galleri {
-    margin-bottom: 35px !important;
-  }
-  .youtube {
-    padding-bottom: 90px !important;
-    height: 345px;
-  }
-  .form-comments {
-    margin-bottom: 45px;
-  }
-  .closing {
-    padding-top: 100px;
-    padding-bottom: 65px;
-  }
+}
+.resume{
+    min-height: 100vh;
+    padding: 120px 0;
+}
+.edu{
+    border-left: 2px solid var(--primary);
+}
+.portfolio{
+    height: 100vh;
+}
+.work{
+    height: 380px;
+}
+.bg-img{
+    overflow: hidden;
+    height: 380px;
+    width: 100%;
+    z-index: -1;
+}
+.bg-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.faq{
+    height: 100vh;
+}
+.icon-faq{
+    width: 270px;
+    height: 220px;
+}
+.icon-faq img{
+    width: 100%;
+    height: 100%;
+}
+.contact{
+    height: 100vh;
+}
+footer{
+    height: 140px;
+}
+
+/* responsive */
+@media screen and (max-width: 1000px) { 
+    .nav{
+        padding-top: 20px;
+    }
+    .nav-item{
+        border-bottom: 1px solid rgba(32, 32, 32, 0.212) !important;
+    }
+
 }
